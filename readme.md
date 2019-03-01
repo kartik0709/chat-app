@@ -2,8 +2,8 @@
 Yarn is used instead of NPM, as NPM has a tendency of breaking dependencies.
 
 TO RUN APPLICATION,
-First install, using 'yarn install' in both front and back directories.
-Then start both the server and frontend, using 'yarn start' in both front and back directories.
+First install, using 'yarn install' in both frontend and back directories.
+Then start both the server and frontend, using 'yarn start' in both frontend and back directories.
 
 Used in Frontend - React.js Framework, react router, jquery, axios(to make api requests), socket.io
 Used in backend - node.js, express, socket.io

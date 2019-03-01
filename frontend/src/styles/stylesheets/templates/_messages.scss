@@ -1,0 +1,75 @@
+.thread-wrapper {
+  height: 100%;
+  padding: 76px 0 100px;
+}
+
+.thread-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 32px;
+  overflow-y: auto;
+}
+
+.thread-container > div {
+  min-height: fit-content;
+  display: flex;
+  margin: 8px 0;
+}
+
+.thread-container > div.thread-right {
+  justify-content: flex-end;
+}
+
+.thread-container > div.thread-right > p {
+  background-color: #fff81854;
+  border-radius: 25px 25px 0 25px;
+}
+
+.thread-container > div > p {
+  line-height: 28px;
+  max-width: 80%;
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 18px;
+  font-family: Objectivity-Regular, sans-serif;
+  background: #E7E7E7;
+  min-width: 58px;
+  word-break: break-all;
+  border-radius: 25px 25px 25px 0;
+}
+
+.thread-heading {
+  border-bottom: 1px solid #BBB;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #FFF;
+}
+
+.thread-heading > p {
+  font-size: 24px;
+  padding: 24px 12px;
+  font-family: Objectivity-Light, sans-serif;
+}
+
+.cheeky-cheeky {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.cheeky-cheeky > p {
+  margin-bottom: 12px;
+  font-size: 32px;
+  font-family: Objectivity-Bold, sans-serif;
+  line-height: 40px;
+}
+
+.cheeky-cheeky > span {
+  font-size: 24px;
+  font-family: Objectivity-Light, sans-serif;
+  line-height: 30px;
+}

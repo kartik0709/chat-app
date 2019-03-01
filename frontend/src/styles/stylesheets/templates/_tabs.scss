@@ -1,0 +1,55 @@
+.i-holder {
+  @extend .flex-r;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.i-holder > div:first-child {
+  width: 30vw;
+  position: relative;
+  background: #111E6C;
+}
+
+.i-holder > div:last-child {
+  width: 70vw;
+  position: relative;
+}
+
+.search {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 24px;
+  background: #111E6C;
+}
+
+.logout {
+  background: #111E6C;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 12px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.logout > button {
+  color: #FFF;
+  min-width: 184px;
+  min-height: 48px;
+  font-size: 20px;
+  font-family: Objectivity-Medium, sans-serif;
+  background: #FF1655;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.send-msg-holder {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 12px 32px;
+  background: #FFF;
+}

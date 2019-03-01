@@ -1,0 +1,115 @@
+.login {
+  text-align: center;
+}
+
+.login > div:first-child {
+  @extend .flex-r;
+  justify-content: space-between;
+}
+
+.login > div:first-child {
+  margin-bottom: 18px;
+}
+
+.login > div:first-child > div {
+  font-family: Objectivity-Regular, sans-serif;
+  font-size: 24px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.login-active-tab {
+  color: #FF1655;
+}
+
+.login input {
+  padding: 12px 55px 12px 12px;
+  min-width: 300px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid transparent;
+  min-height: 50px;
+  box-shadow: 5px 5px 25px 5px rgba(128, 128, 128, 0.1);
+  border-radius: 5px;
+  font-family: Objectivity-Regular, sans-serif;
+}
+
+.login input:focus {
+  border: 1px solid rgb(0,0,255);
+}
+
+.login input.correct {
+  border: 1px solid rgb(0,255,127) !important;
+}
+
+.login input.error {
+  border: 1px solid rgb(255,0,0) !important;
+}
+
+.submit-btn {
+  position: relative;
+  margin: 20px auto 0;
+  font-family: Objectivity-Medium, sans-serif;
+  min-width: 220px;
+  min-height: 50px;
+  max-height: 50px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 25px 5px rgba(128, 128, 128, 0.1);
+  font-size: 20px;
+  color: #FFF;
+  background: #FF1655;
+  cursor: pointer;
+  padding: 14px;
+}
+
+.submit-btn > p {
+  font-size: 20px;
+}
+
+.user {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 30px;
+}
+
+.submit-error {
+  display: block;
+  opacity: 0;
+  font-family: Objectivity-Light, sans-serif;
+  text-align: center;
+  margin: 20px auto 0;
+  color: #FF1655;
+}
+
+.correct-user {
+  opacity: 0;
+  min-height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 0;
+  background: rgb(0,255,127) url(../images/correct.svg) no-repeat center center;
+  background-size: 20px;
+  border-radius: 5px;
+}
+
+.error-user {
+  @extend .correct-user;
+  background: rgb(255,0,0) url(../images/error.svg) no-repeat center center;
+  background-size: 25px;
+}
+
+.error-msg {
+  display: none;
+  position: absolute;
+  top: 50%;
+  font-size: 14px;
+  font-family: Objectivity-Light, sans-serif;
+  transform: translateY(-50%);
+  left: 11px;
+  text-align: left;
+  background: #FFF;
+  color: red;
+}

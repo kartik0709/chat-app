@@ -1,0 +1,43 @@
+section {
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+}
+
+.flex-r {
+  display: flex;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-it {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.to-right, .to-left {
+  position: relative;
+  width: 100%;
+}
+
+.to-right > img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
+  max-width: 18px;
+}
+
+.to-left > img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  max-width: 18px;
+}

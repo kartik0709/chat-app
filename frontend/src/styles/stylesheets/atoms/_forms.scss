@@ -1,0 +1,36 @@
+input {
+  outline: none;
+  border: none;
+  min-height: 48px;
+  font-family: Objectivity-Medium, sans-serif;
+}
+
+input.search-input {
+  width: 100%;
+  font-size: 18px;
+  padding: 12px 12px 12px 64px;
+  background: transparent;
+  color: #FFF;
+  border-bottom: 1px solid rgba(187, 187, 187, 0.4);
+
+}
+
+input.search-input::placeholder {
+  color: #FFF;
+  opacity: .55;
+}
+
+input.search-input:focus {
+  border-bottom: 1px solid #FFF;
+}
+
+input.send-msg {
+  width: 100%;
+  border: 2px solid rgba(187, 187, 187, 1);
+  border-radius: 25px;
+  padding: 12px 55px 12px 20px;
+}
+
+input.send-msg:focus {
+  border: 2px solid #111E6C;
+}
